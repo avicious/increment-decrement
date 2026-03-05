@@ -18,15 +18,25 @@ const IncrementDecrement = ({ minVal = 2, maxVal = 8 }) => {
   };
 
   return (
-    <div className={styles.group}>
-      <button className={styles.increment} onClick={handleIncrementCounter}>
-        <Plus />
+    <div className={styles.group} role="group" aria-label="Value selector">
+      <button
+        onClick={handleDecrementCounter}
+        disabled={count <= minVal}
+        aria-label="Decrease value"
+      >
+        <Minus />
       </button>
 
-      <p>{count}</p>
+      <span className={styles.count} aria-live="polite">
+        {count}
+      </span>
 
-      <button className={styles.decrement} onClick={handleDecrementCounter}>
-        <Minus />
+      <button
+        onClick={handleIncrementCounter}
+        disabled={count >= maxVal}
+        aria-label="Increase value"
+      >
+        <Plus />
       </button>
     </div>
   );

@@ -29,7 +29,12 @@ button:hover {
   background-color: #f3f9ff;
 }
 
-p {
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.count {
   width: 50px;
   display: flex;
   align-items: center;

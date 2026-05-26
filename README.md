@@ -2,6 +2,10 @@
 
 A lightweight, accessible, and customizable React counter component built with **Lucide React** icons and **CSS Modules**.
 
+## Live Demo
+
+**Check out the live version of this project here:** [avicious.github.io/increment-decrement/](https://avicious.github.io/increment-decrement/)
+
 ## Features
 
 - **Boundary Protection:** Hard limits for minimum and maximum values.
